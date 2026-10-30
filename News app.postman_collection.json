@@ -1,0 +1,130 @@
+{
+  "info": {
+    "_postman_id": "efe0cf66-28ce-40cf-af1c-2121ad8eec78",
+    "name": "News app",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "50865475"
+  },
+  "item": [
+    {
+      "name": "search",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "urlencoded",
+          "urlencoded": [
+            {
+              "type": "text",
+              "key": "country",
+              "value": "us"
+            },
+            {
+              "type": "text",
+              "key": "apiKey",
+              "value": "5c5aff587e9e4ff0aeb60bc6cf5a7d2f"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://newsapi.org/v2/everything?q=code&apiKey=6a2bfa8471a048ddab606150547fe945",
+          "protocol": "https",
+          "host": [
+            "newsapi",
+            "org"
+          ],
+          "path": [
+            "v2",
+            "everything"
+          ],
+          "query": [
+            {
+              "key": "q",
+              "value": "code"
+            },
+            {
+              "key": "apiKey",
+              "value": "6a2bfa8471a048ddab606150547fe945"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "home",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://newsapi.org/v2/top-headlines?country=us&apiKey=6a2bfa8471a048ddab606150547fe945",
+          "protocol": "https",
+          "host": [
+            "newsapi",
+            "org"
+          ],
+          "path": [
+            "v2",
+            "top-headlines"
+          ],
+          "query": [
+            {
+              "key": "country",
+              "value": "us"
+            },
+            {
+              "key": "apiKey",
+              "value": "6a2bfa8471a048ddab606150547fe945"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "https://flagstick-cyclic-retrace.ngrok-free.dev/chat",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"message\": \"thank you\"} ",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://flagstick-cyclic-retrace.ngrok-free.dev/chat?ngrok-skip-browser-warning =true&Content-Type=application/json",
+          "protocol": "https",
+          "host": [
+            "flagstick-cyclic-retrace",
+            "ngrok-free",
+            "dev"
+          ],
+          "path": [
+            "chat"
+          ],
+          "query": [
+            {
+              "key": "ngrok-skip-browser-warning ",
+              "value": "true"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
